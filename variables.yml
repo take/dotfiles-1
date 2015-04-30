@@ -10,6 +10,7 @@ homebrew_cask_package_names:
   - slack
   - vlc
 homebrew_package_names:
+  - caskroom/cask/brew-cask
   - zsh
   - vim
   - tmux
