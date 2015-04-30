@@ -14,7 +14,10 @@ homebrew_cask_package_names:
   - github
 homebrew_package_names:
   - caskroom/cask/brew-cask
+  - coreutils
   - zsh
+  - libyaml
+  - direnv
   - vim
   - tmux
   - reattach-to-user-namespace
