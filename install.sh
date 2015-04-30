@@ -1,16 +1,16 @@
 #!/usr/bin/env bash
 
-tempfile=/tmp/dotfiles.zip
-workspace=/tmp/dotfiles
+tempfile=/tmp/my-serverkit.zip
+workspace=/tmp/my-serverkit
 
 # Download zipped installer
-curl -LSfs -o ${tempfile} https://github.com/r7kamura/dotfiles/archive/master.zip
+curl -LSfs -o ${tempfile} https://github.com/take/my-serverkit/archive/master.zip
 
 # Unzip installer into workspace
 unzip -oq ${tempfile} -d ${workspace}
 
 # Move to repository root path
-pushd ${workspace}/dotfiles-master > /dev/null
+pushd ${workspace}/my-serverkit-master > /dev/null
 
 # Install command-line-tools
 if [[ ! -d /usr/include ]]; then
