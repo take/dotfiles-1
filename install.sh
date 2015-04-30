@@ -26,6 +26,7 @@ which brew > /dev/null
 if [ "$?" -ne 0 ]; then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+sudo chown root /usr/local/bin/brew
 
 # Install serverkit and its dependencies
 sudo which bundle > /dev/null || sudo gem install bundler
