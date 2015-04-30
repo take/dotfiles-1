@@ -32,7 +32,7 @@ sudo which bundle > /dev/null || sudo gem install bundler
 sudo bundle install > /dev/null
 
 # Run installer
-sudo bundle exec serverkit apply recipe.yml.erb --variables=variables.yml
+sudo bundle exec serverkit apply recipe.yml.erb --variables=variables.yml --log-level=debug
 
 # Move to original path
 popd > /dev/null
