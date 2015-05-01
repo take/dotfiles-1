@@ -31,3 +31,9 @@ homebrew_package_names:
   - nodenv
   - rbenv
   - ruby-build
+login_item_names:
+  - "Alfred 2"
+  - Dropbox
+  - GitHub
+  - Slack
+  - "Google Chrome"

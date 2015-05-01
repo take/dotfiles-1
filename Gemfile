@@ -6,3 +6,4 @@ gem "serverkit-defaults", github: "take/serverkit-defaults", branch: "enable-to-
 gem "serverkit-homebrew"
 gem "serverkit-karabiner"
 gem "serverkit-rbenv"
+gem "serverkit-login_items"

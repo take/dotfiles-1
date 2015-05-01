@@ -9,6 +9,14 @@ resources:
   - type: homebrew_cask_package
     name: <%= homebrew_cask_package_name %>
   <%- end -%>
+  - type: login_items
+    path: /Applications/Karabiner.app
+    hidden: true
+  <%- login_item_names.each do |login_item_name| -%>
+  - type: login_items
+    path: /Users/<%= ENV["USER"] %>/Applications/<%= login_item_name %>.app
+    hidden: true
+  <%- end -%>
   - type: rbenv_ruby
     version: 2.2.1
     global: true

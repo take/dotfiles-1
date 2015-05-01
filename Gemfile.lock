@@ -46,6 +46,8 @@ GEM
       serverkit
     serverkit-karabiner (0.0.1)
       serverkit
+    serverkit-login_items (0.0.1)
+      serverkit
     serverkit-rbenv (0.0.3)
       serverkit
     slop (3.6.0)
@@ -66,4 +68,5 @@ DEPENDENCIES
   serverkit-defaults!
   serverkit-homebrew
   serverkit-karabiner
+  serverkit-login_items
   serverkit-rbenv
