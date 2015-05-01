@@ -30,6 +30,11 @@ resources:
     value: []
     notify:
       - restart_dock
+  - type: defaults # defaults -currentHost write -g com.apple.keyboard.modifiermapping.1452-601-0 -array '<dict><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer><key>HIDKeyboardModifierMappingDst</key><integer>2</integer></dict>'
+    host: current
+    key: com.apple.keyboard.modifiermapping.1452-601-0
+    type_option: -array
+    value: "<dict><key>HIDKeyboardModifierMappingSrc</key><integer>0</integer><key>HIDKeyboardModifierMappingDst</key><integer>2</integer></dict>"
   - type: karabiner
     key: repeat.wait
     value: 45

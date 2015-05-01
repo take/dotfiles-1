@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/take/serverkit-defaults.git
+  revision: fc731abbc2912daa14d3a32dc826d1409e6c3cfc
+  branch: enable-to-modify-keyboard-mapping
+  specs:
+    serverkit-defaults (0.0.3)
+      plist
+      serverkit
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -33,9 +42,6 @@ GEM
       unix-crypt
     serverkit-atom (0.0.1)
       serverkit
-    serverkit-defaults (0.0.3)
-      plist
-      serverkit
     serverkit-homebrew (0.0.5)
       serverkit
     serverkit-karabiner (0.0.1)
@@ -57,7 +63,7 @@ PLATFORMS
 DEPENDENCIES
   serverkit
   serverkit-atom
-  serverkit-defaults
+  serverkit-defaults!
   serverkit-homebrew
   serverkit-karabiner
   serverkit-rbenv
