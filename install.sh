@@ -29,12 +29,12 @@ fi
 
 # Install serverkit and its dependencies
 export GEM_HOME=`pwd`/vendor/bundle
-which bundle > /dev/null || gem install bundler
-ls ./vendor/bundle
-bundle install --path vendor/bundle > /dev/null
+gem install bundler
+./vendor/bundle/bin/bundle install --path vendor/bundle > /dev/null
 
 # Run installer
 bundle exec serverkit apply recipe.yml.erb --variables=variables.yml
+unset GEM_HOME
 
 # Move to original path
 popd > /dev/null
