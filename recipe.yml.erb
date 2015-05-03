@@ -56,6 +56,18 @@ resources:
     key: repeat.initial_wait
     value: 10
     recheck_script: "true"
+  - type: karabiner
+    key: option.extra_cursor_optionL_kjhl
+    value: 1
+    recheck_script: "true"
+  - type: karabiner
+    key: remap.jis_optionL2optionL_eisuu
+    value: 1
+    recheck_script: "true"
+  - type: karabiner
+    key: remap.jis_optionR2optionR_kana
+    value: 1
+    recheck_script: "true"
   - type: command
     check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
     script: sudo chsh -s /bin/zsh <%= ENV["USER"] %>
