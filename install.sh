@@ -28,9 +28,10 @@ if [ "$?" -ne 0 ]; then
 fi
 
 # Install serverkit and its dependencies
-export GEM_HOME=`pwd`
+export GEM_HOME=`pwd`/vendor/bundle
 which bundle > /dev/null || gem install bundler
-bundle install > /dev/null
+ls ./vendor/bundle
+bundle install --path vendor/bundle > /dev/null
 
 # Run installer
 bundle exec serverkit apply recipe.yml.erb --variables=variables.yml
