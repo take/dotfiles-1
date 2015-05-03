@@ -17,9 +17,6 @@ resources:
     path: /Users/takehiro/Applications/<%= login_item_name %>.app
     hidden: true
   <%- end -%>
-  - type: rbenv_ruby
-    version: 2.2.1
-    global: true
   - type: defaults
     domain: com.apple.dock
     key: autohide
@@ -86,6 +83,9 @@ resources:
     destination: /Users/takehiro/projects/dotfiles/<%= dotfile %>
     source: /Users/takehiro/<%= dotfile %>
 <%- end -%>
+  - type: rbenv_ruby
+    version: 2.2.1
+    global: true
 handlers:
   - id: restart_dock
     type: command
