@@ -39,6 +39,11 @@ resources:
     notify:
       - restart_dock
   - type: defaults
+    domain: com.apple.finder
+    key: AppleShowAllFiles
+    type_option: -bool
+    value: "YES"
+  - type: defaults
     host: current
     key: com.apple.keyboard.modifiermapping.1452-601-0
     type_option: -array
@@ -55,3 +60,6 @@ handlers:
   - id: restart_dock
     type: command
     script: killall Dock
+  - id: restart_finder
+    type: command
+    script: killall Finder
