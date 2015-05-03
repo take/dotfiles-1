@@ -14,7 +14,7 @@ resources:
     hidden: true
   <%- login_item_names.each do |login_item_name| -%>
   - type: login_items
-    path: /Users/<%= ENV["USER"] %>/Applications/<%= login_item_name %>.app
+    path: /Users/takehiro/Applications/<%= login_item_name %>.app
     hidden: true
   <%- end -%>
   - type: rbenv_ruby
@@ -70,18 +70,18 @@ resources:
     recheck_script: "true"
   - type: command
     check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
-    script: sudo chsh -s /bin/zsh <%= ENV["USER"] %>
+    script: sudo chsh -s /bin/zsh takehiro
   - type: git
     repository: https://github.com/robbyrussell/oh-my-zsh.git
-    path: /Users/<%= ENV["USER"] %>/.oh-my-zsh
+    path: /Users/takehiro/.oh-my-zsh
     status: updated
   - type: git
     repository: https://github.com/take/my-serverkit.git
-    path: /Users/<%= ENV["USER"] %>/projects/my-serverkit
+    path: /Users/takehiro/projects/my-serverkit
 <%- dotfiles.each do |dotfile| -%>
   - type: symlink
-    destination: /Users/<%= ENV["USER"] %>/Dropbox/projects/dotfiles/<%= dotfile %>
-    source: /Users/<%= ENV["USER"] %>/<%= dotfile %>
+    destination: /Users/takehiro/Dropbox/projects/dotfiles/<%= dotfile %>
+    source: /Users/takehiro/<%= dotfile %>
 <%- end -%>
 handlers:
   - id: restart_dock
