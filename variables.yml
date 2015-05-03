@@ -1,5 +1,6 @@
 homebrew_cask_package_names:
   - alfred
+  - bartender
   - dropbox
   - 1password
   - google-chrome
@@ -33,6 +34,7 @@ homebrew_package_names:
   - ruby-build
 login_item_names:
   - "Alfred 2"
+  - Bartender
   - Dropbox
   - GitHub
   - Slack
