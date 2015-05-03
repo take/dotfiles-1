@@ -39,3 +39,9 @@ login_item_names:
   - GitHub
   - Slack
   - "Google Chrome"
+dotfiles:
+  - .gitignore_global
+  - .tmux.conf
+  - .tmuxinator/
+  - .vimrc
+  - .zshrc

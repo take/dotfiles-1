@@ -59,6 +59,11 @@ resources:
   - type: command
     check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
     script: sudo chsh -s /bin/zsh <%= ENV["USER"] %>
+<%- dotfiles.each do |dotfile| -%>
+  - type: symlink
+    destination: /Users/<%= ENV["USER"] %>/Dropbox/projects/dotfiles/<%= dotfile %>
+    source: /Users/<%= ENV["USER"] %>/<%= dotfile %>
+<%- end -%>
 handlers:
   - id: restart_dock
     type: command
