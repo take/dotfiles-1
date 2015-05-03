@@ -59,6 +59,10 @@ resources:
   - type: command
     check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
     script: sudo chsh -s /bin/zsh <%= ENV["USER"] %>
+  - type: git
+    repository: https://github.com/robbyrussell/oh-my-zsh.git
+    path: /Users/<%= ENV["USER"] %>/.oh-my-zsh
+    status: updated
 <%- dotfiles.each do |dotfile| -%>
   - type: symlink
     destination: /Users/<%= ENV["USER"] %>/Dropbox/projects/dotfiles/<%= dotfile %>
