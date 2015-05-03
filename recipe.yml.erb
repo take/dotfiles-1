@@ -75,6 +75,9 @@ resources:
     repository: https://github.com/robbyrussell/oh-my-zsh.git
     path: /Users/<%= ENV["USER"] %>/.oh-my-zsh
     status: updated
+  - type: git
+    repository: https://github.com/take/my-serverkit.git
+    path: /Users/<%= ENV["USER"] %>/projects/my-serverkit
 <%- dotfiles.each do |dotfile| -%>
   - type: symlink
     destination: /Users/<%= ENV["USER"] %>/Dropbox/projects/dotfiles/<%= dotfile %>
