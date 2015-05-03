@@ -30,6 +30,7 @@ fi
 # Install serverkit and its dependencies
 export GEM_HOME=`pwd`/vendor/bundle
 gem install bundler
+ls ./vendor/bundle/bin
 ./vendor/bundle/bin/bundle install --path vendor/bundle > /dev/null
 
 # Run installer
