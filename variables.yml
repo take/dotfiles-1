@@ -32,6 +32,7 @@ homebrew_package_names:
   - nodenv
   - rbenv
   - ruby-build
+  - heroku
 login_item_names:
   - "Alfred 2"
   - Bartender
@@ -40,6 +41,7 @@ login_item_names:
   - Slack
   - "Google Chrome"
 dotfiles:
+  - .gitconfig
   - .gitignore_global
   - .tmux.conf
   - .tmuxinator/
