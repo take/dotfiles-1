@@ -28,6 +28,7 @@ if [ "$?" -ne 0 ]; then
 fi
 
 # Install serverkit and its dependencies
+export GEM_HOME=`pwd`
 which bundle > /dev/null || gem install bundler
 bundle install > /dev/null
 
