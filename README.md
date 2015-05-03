@@ -8,7 +8,9 @@ A chain of configurations for my laptop.
 curl -LSfs https://raw.githubusercontent.com/take/my-serverkit/master/install.sh | bash
 ```
 
-## App Store
+## Manual steps
 
-- tweetdeck
-- line
+- load iTerm preferences from dropbox
+- install app store apps
+  - tweetdeck
+  - line
