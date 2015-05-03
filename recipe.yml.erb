@@ -78,9 +78,12 @@ resources:
   - type: git
     repository: https://github.com/take/my-serverkit.git
     path: /Users/takehiro/projects/my-serverkit
+  - type: git
+    repository: https://github.com/take/dotfiles.git
+    path: /Users/takehiro/projects/dotfiles
 <%- dotfiles.each do |dotfile| -%>
   - type: symlink
-    destination: /Users/takehiro/Dropbox/projects/dotfiles/<%= dotfile %>
+    destination: /Users/takehiro/projects/dotfiles/<%= dotfile %>
     source: /Users/takehiro/<%= dotfile %>
 <%- end -%>
 handlers:
