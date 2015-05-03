@@ -56,6 +56,9 @@ resources:
     key: repeat.initial_wait
     value: 10
     recheck_script: "true"
+  - type: command
+    check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
+    script: sudo chsh -s /bin/zsh <%= ENV["USER"] %>
 handlers:
   - id: restart_dock
     type: command
