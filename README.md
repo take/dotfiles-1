@@ -10,6 +10,7 @@ curl -LSfs https://raw.githubusercontent.com/take/my-serverkit/master/install.sh
 
 ## Manual steps
 
+- apply private serverkit
 - load iTerm preferences from dotfiles/plist/
 - install github for mac CLT
 - install app store apps

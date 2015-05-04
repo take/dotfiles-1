@@ -88,6 +88,9 @@ resources:
     destination: /Users/takehiro/projects/dotfiles/<%= dotfile %>
     source: /Users/takehiro/<%= dotfile %>
 <%- end -%>
+  - type: git
+    repository: https://github.com/take/my-private-serverkit.git
+    path: /Users/takehiro/projects/my-private-serverkit
   - type: rbenv_ruby
     version: 2.2.1
     global: true
