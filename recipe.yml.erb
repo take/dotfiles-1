@@ -41,15 +41,18 @@ resources:
     value: []
     notify:
       - restart_dock
+  # FIXME:
   - type: defaults
     key: com.apple.swipescrolldirection
     type_option: -bool
     value: "NO"
+  # FIXME:
   - type: defaults
     domain: com.apple.finder
     key: AppleShowAllFiles
     type_option: -bool
     value: "YES"
+  # FIXME:
   - type: defaults
     host: current
     key: com.apple.keyboard.modifiermapping.1452-601-0
@@ -103,6 +106,12 @@ resources:
   - type: command
     check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
     script: sudo chsh -s /bin/zsh takehiro
+  <%# # FIXME: sudo is neccessary %>
+  <%# - type: defaults %>
+  <%#   domain: /Library/Preferences/com.apple.loginwindow %>
+  <%#   key: GuestEnabled %>
+  <%#   type_option: -bool %>
+  <%#   value: "NO" %>
 handlers:
   - id: restart_dock
     type: command
