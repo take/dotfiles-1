@@ -5,6 +5,9 @@ resources:
   - type: homebrew_package
     name: <%= homebrew_package_name %>
   <%- end -%>
+  - type: homebrew_package
+    name: vim
+    options: --with-lua
   # FIXME:
   <%- ['mysql', 'mongodb', 'redis'].each do |db| -%>
   - type: symlink
@@ -53,6 +56,7 @@ resources:
     type_option: -bool
     value: "YES"
   # FIXME:
+  # TODO: Automatically get keyboard id
   - type: defaults
     host: current
     key: com.apple.keyboard.modifiermapping.1452-601-0

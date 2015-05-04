@@ -22,7 +22,6 @@ homebrew_package_names:
   - zsh
   - libyaml
   - direnv
-  - vim
   - tmux
   - reattach-to-user-namespace
   - openssl
@@ -34,6 +33,7 @@ homebrew_package_names:
   - nodenv
   - rbenv
   - ruby-build
+  - rbenv-default-gems
   - heroku-toolbelt
 login_item_names:
   - "Alfred 2"
