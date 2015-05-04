@@ -51,3 +51,4 @@ dotfiles:
   - .tmuxinator
   - .vimrc
   - .zshrc
+  - .rbenv/default-gems
