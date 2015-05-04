@@ -73,9 +73,6 @@ resources:
     key: remap.jis_optionR2optionR_kana
     value: 1
     recheck_script: "true"
-  - type: command
-    check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
-    script: sudo chsh -s /bin/zsh takehiro
   - type: git
     repository: https://github.com/robbyrussell/oh-my-zsh.git
     path: /Users/takehiro/.oh-my-zsh
@@ -94,6 +91,9 @@ resources:
   - type: rbenv_ruby
     version: 2.2.1
     global: true
+  - type: command
+    check_script: "finger -l | grep -E 'Shell: /bin/zsh$'"
+    script: sudo chsh -s /bin/zsh takehiro
 handlers:
   - id: restart_dock
     type: command
