@@ -40,8 +40,6 @@ GEM
       slop (~> 3.4)
       specinfra (>= 2.29.0)
       unix-crypt
-    serverkit-atom (0.0.1)
-      serverkit
     serverkit-homebrew (0.0.5)
       serverkit
     serverkit-karabiner (0.0.1)
@@ -64,7 +62,6 @@ PLATFORMS
 
 DEPENDENCIES
   serverkit
-  serverkit-atom
   serverkit-defaults!
   serverkit-homebrew
   serverkit-karabiner
