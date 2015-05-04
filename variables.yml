@@ -15,6 +15,7 @@ homebrew_cask_package_names:
   - github
   - flux
   - hipchat
+  - skype
 homebrew_package_names:
   - caskroom/cask/brew-cask
   - readline
