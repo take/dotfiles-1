@@ -45,6 +45,10 @@ login_item_names:
   - "Google Chrome"
   - Flux
   - HipChat
+my_repos:
+  - my-serverkit
+  - dotfiles
+  - take.github.io
 dotfiles:
   - .gitconfig
   - .gitignore_global

@@ -91,12 +91,11 @@ resources:
     repository: https://github.com/robbyrussell/oh-my-zsh.git
     path: /Users/takehiro/.oh-my-zsh
     status: updated
+<%- my_repos.each do |repo| -%>
   - type: git
-    repository: https://github.com/take/my-serverkit.git
-    path: /Users/takehiro/projects/my-serverkit
-  - type: git
-    repository: https://github.com/take/dotfiles.git
-    path: /Users/takehiro/projects/dotfiles
+    repository: https://github.com/take/<%= repo %>.git
+    path: /Users/takehiro/projects/<%= repo %>
+<%- end -%>
 <%- dotfiles.each do |dotfile| -%>
   - type: symlink
     destination: /Users/takehiro/projects/dotfiles/<%= dotfile %>
