@@ -9,7 +9,7 @@ resources:
     name: vim
     options: --with-lua
   # FIXME:
-  <%- ['mysql', 'mongodb', 'redis'].each do |db| -%>
+  <%- ['mysql', 'postgresql', 'mongodb', 'redis'].each do |db| -%>
   - type: symlink
     destination: /usr/local/opt/<%= db %>/*.plist
     source: ~/Library/LaunchAgents
