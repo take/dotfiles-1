@@ -18,3 +18,4 @@ curl -LSfs https://raw.githubusercontent.com/take/my-serverkit/master/install.sh
   - tweetdeck
   - line
 - login to each apps
+- display sleep settings(might be automated via `pmset` and `defaults` command)
