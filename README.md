@@ -19,3 +19,4 @@ curl -LSfs https://raw.githubusercontent.com/take/my-serverkit/master/install.sh
   - line
 - login to each apps
 - display sleep settings(might be automated via `pmset` and `defaults` command)
+- DL and install [Razor Synapse](http://drivers.razersupport.com//index.php?_m=downloads&_a=viewdownload&downloaditemid=1974)
