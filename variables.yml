@@ -53,7 +53,6 @@ dotfiles:
   - .gitconfig
   - .gitignore_global
   - .tmux.conf
-  - .tmuxinator
   - .vimrc
   - .zshrc
   - .rbenv/default-gems
