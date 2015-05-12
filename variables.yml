@@ -36,6 +36,7 @@ homebrew_package_names:
   - ruby-build
   - rbenv-default-gems
   - heroku-toolbelt
+  - phantomjs
 login_item_names:
   - "Alfred 2"
   - Bartender
