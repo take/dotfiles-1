@@ -2,7 +2,6 @@ homebrew_cask_package_names:
   - alfred
   - bartender
   - dropbox
-  - 1password
   - google-chrome
   - google-japanese-ime
   - gyazo

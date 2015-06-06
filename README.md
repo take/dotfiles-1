@@ -15,6 +15,7 @@ curl -LSfs https://raw.githubusercontent.com/take/my-serverkit/master/install.sh
 - load iTerm preferences from dotfiles/plist/
 - install github for mac CLT
 - install app store apps
+  - 1password
   - tweetdeck
   - line
 - login to each apps
