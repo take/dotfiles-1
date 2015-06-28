@@ -34,6 +34,7 @@ homebrew_package_names:
   - rbenv
   - ruby-build
   - rbenv-default-gems
+  - nodebrew
   - heroku-toolbelt
   - phantomjs
 login_item_names:

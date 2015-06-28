@@ -67,3 +67,6 @@ DEPENDENCIES
   serverkit-karabiner
   serverkit-login_items
   serverkit-rbenv
+
+BUNDLED WITH
+   1.10.4
