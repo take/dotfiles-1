@@ -17,6 +17,7 @@ homebrew_cask_package_names:
   - skype
 homebrew_package_names:
   - caskroom/cask/brew-cask
+  - ag
   - readline
   - coreutils
   - zsh
