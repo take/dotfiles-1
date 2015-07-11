@@ -38,6 +38,7 @@ homebrew_package_names:
   - nodebrew
   - heroku-toolbelt
   - phantomjs
+  - ffmpegthumbnailer
 login_item_names:
   - "Alfred 2"
   - Bartender
