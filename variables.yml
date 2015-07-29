@@ -39,6 +39,7 @@ homebrew_package_names:
   - heroku-toolbelt
   - phantomjs
   - ffmpegthumbnailer
+  - ansible
 login_item_names:
   - "Alfred 2"
   - Bartender
