@@ -1,7 +1,6 @@
 homebrew_cask_package_names:
   - dropbox
   - google-chrome
-  - google-japanese-ime
   - gyazo
   - iterm2
   - karabiner
