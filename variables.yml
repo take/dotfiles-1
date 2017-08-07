@@ -1,6 +1,4 @@
 homebrew_cask_package_names:
-  - alfred
-  - bartender
   - dropbox
   - google-chrome
   - google-japanese-ime
@@ -11,12 +9,10 @@ homebrew_cask_package_names:
   - slack
   - vlc
   - teamspeak-client
-  - github
-  - flux
-  - hipchat
-  - skype
+  - github-desktop
   - java
   - eclipse-java
+  - 1password
 homebrew_package_names:
   - caskroom/cask/brew-cask
   - ag
@@ -43,14 +39,10 @@ homebrew_package_names:
   - ffmpegthumbnailer
   - ansible
 login_item_names:
-  - "Alfred 2"
-  - Bartender
   - Dropbox
   - GitHub
   - Slack
   - "Google Chrome"
-  - Flux
-  - HipChat
 my_repos:
   - my-serverkit
   - dotfiles
