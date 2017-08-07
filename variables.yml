@@ -39,6 +39,7 @@ homebrew_package_names:
   - phantomjs
   - ffmpegthumbnailer
   - ansible
+  - mecab
 login_item_names:
   - Dropbox
   - GitHub
