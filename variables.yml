@@ -12,6 +12,7 @@ homebrew_cask_package_names:
   - java
   - eclipse-java
   - 1password
+  - discord
 homebrew_package_names:
   - git
   - git-lfs
