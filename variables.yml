@@ -13,6 +13,7 @@ homebrew_cask_package_names:
   - eclipse-java
   - 1password
   - discord
+  - cmd-eikana
 homebrew_package_names:
   - git
   - git-lfs
